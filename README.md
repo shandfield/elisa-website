@@ -26,12 +26,14 @@ I wanted to help out a family friend that had a pretty basic website for her bus
 
 ## Technologies
 HTML5, CSS, Bootstrap for now, more to come as the build continues. 
+[![HTML]https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white
+[![CSS]https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white
 
 ## Contributing
 At this time, please do not fork or contribute to this project. As this is a personal project for a family friend. 
 
 ## References
-For the badges, https://github.com/Naereen/badges
+For the badges, https://github.com/Naereen/badges and https://github.com/alexandresanlim/Badges4-README.md-Profile.
 For ideas on how to make the table of contents, https://coderwall.com/p/fy05hq/how-to-make-beautiful-github-readme
 For ideas on how to make an amazing README, https://towardsdatascience.com/build-a-stunning-readme-for-your-github-profile-9b80434fe5d7
 
@@ -43,4 +45,4 @@ MIT @ Shelby Handfield
 [[params.social]]
     icon = "linkedin"
     icon_pack = "fa"
-    link = "//linkedin.com/in/shelby-handfield-87ba6810b/"
+    link = "https://www.linkedin.com/in/shelby-handfield-87ba6810b/"

@@ -26,8 +26,8 @@ I wanted to help out a family friend that had a pretty basic website for her bus
 
 ## Technologies
 HTML5, CSS, Bootstrap for now, more to come as the build continues. 
-[![HTML]https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white
-[![CSS]https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white
+<img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white" />
+<img src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white" />
 
 ## Contributing
 At this time, please do not fork or contribute to this project. As this is a personal project for a family friend. 
@@ -42,7 +42,5 @@ MIT @ Shelby Handfield
 
 
 ## Social
-[[params.social]]
-    icon = "linkedin"
-    icon_pack = "fa"
-    link = "https://www.linkedin.com/in/shelby-handfield-87ba6810b/"
+Find me on LinkedIn!! 
+   [![Linkedin](https://i.stack.imgur.com/gVE0j.png) LinkedIn](https://www.linkedin.com/in/shelby-handfield-87ba6810b/)

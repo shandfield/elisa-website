@@ -5,25 +5,20 @@
 # elisa-website
 > This is a repository for a website that I am creating for a family friend that sells products for people and pets in the form of CBD and also essential oils.🐕  🪔  🌿 
 <hr> 
-# Table of Contents
-<br>
-*[Motivation](#motivation)
-<br>
-*[Technologies](#technologies)
-<br>
-*[Usage](#usage)
-<br>
-*[Contributing](#contributing)
-<br>
-*[Referenes](#references)
-<br>
-*[License](#license)
+#### Table of Contents
+=========================
+* [Motivation](#motivation)
+* [Technologies](#technologies)
+* [Usage](#usage)
+* [Contributing](#contributing)
+* [Referenes](#references)
+* [License](#license)
 
 # Motivation
-
+I wanted to help out a family friend that had a pretty basic website for her business and make more polished and user intuitive one. She is a small buisness owner, and sells products for people and animals to help heal with CBD. She also sells essential oils and other pet products. I really wanted to help her grow her business as well, espcially with COVID 19 happening. 
 
 # Technologies
-
+HTML5, CSS, Bootstrap for now, more to come as the build continues. 
 
 # Contributing
 At this time, please do not fork or contribute to this project. As this is a personal project for a family friend. 

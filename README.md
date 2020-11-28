@@ -7,11 +7,17 @@
 
 ### Table of Contents
   [Motivation](https://github.com/shandfield/elisa-website/blob/main/README.md#motivation)
+  
   [Technologies](https://github.com/shandfield/elisa-website/blob/main/README.md#technologies)
+  
   [Usage](https://github.com/shandfield/elisa-website/blob/main/README.md#usage)
+  
   [Contributing](https://github.com/shandfield/elisa-website/blob/main/README.md#contributing)
+  
   [References](https://github.com/shandfield/elisa-website/blob/main/README.md#references)
+  
   [License](https://github.com/shandfield/elisa-website/blob/main/README.md#license)
+  
   [Social](https://github.com/shandfield/elisa-website/blob/main/README.md#social)
 
 

@@ -1,18 +1,18 @@
-[![Header](https://github.com/shandfield/elisa-website/README.md/readme_header.png "Header")](https://github.com/shandfield/elisa-website)
 [![GitHub issues](https://img.shields.io/github/issues/Naereen/StrapDown.js.svg)](https://GitHub.com/Naereen/StrapDown.js/issues/)
 [![GitHub issues-closed](https://img.shields.io/github/issues-closed/Naereen/StrapDown.js.svg)](https://GitHub.com/Naereen/StrapDown.js/issues?q=is%3Aissue+is%3Aclosed)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)
-# elisa-website
+# Elisa's Website
 > This is a repository for a website that I am creating for a family friend that sells products for people and pets in the form of CBD and also essential oils.🐕  🪔  🌿 
 <hr> 
 # Table of Contents
 =========================
-* [Motivation](#motivation)
-* [Technologies](#technologies)
-* [Usage](#usage)
-* [Contributing](#contributing)
-* [Referenes](#references)
-* [License](#license)
+* [Motivation](https://github.com/shandfield/elisa-website/blob/main/README.md#motivation)
+* [Technologies](https://github.com/shandfield/elisa-website/blob/main/README.md#technologies)
+* [Usage](https://github.com/shandfield/elisa-website/blob/main/README.md#usage)
+* [Contributing](https://github.com/shandfield/elisa-website/blob/main/README.md#contributing)
+* [References](https://github.com/shandfield/elisa-website/blob/main/README.md#references)
+* [License](https://github.com/shandfield/elisa-website/blob/main/README.md#license)
+* [Social](https://github.com/shandfield/elisa-website/blob/main/README.md#social)
 
 ## Motivation
 I wanted to help out a family friend that had a pretty basic website for her business and make more polished and user intuitive one. She is a small buisness owner, and sells products for people and animals to help heal with CBD. She also sells essential oils and other pet products. I really wanted to help her grow her business as well, espcially with COVID 19 happening. 

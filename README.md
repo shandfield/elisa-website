@@ -40,6 +40,7 @@ MIT @ Shelby Handfield
 
 
 ## Social
-You can find me on [![LinkedIn][3.2]][3].
-[2.2]: https://raw.githubusercontent.com/shandfield/shandfield/master/linkedin-3-16.png (LinkedIn icon without padding)
-[2]: https://www.linkedin.com/in/shelby-handfield-87ba6810b/
+[[params.social]]
+    icon = "linkedin"
+    icon_pack = "fa"
+    link = "//linkedin.com/in/shelby-handfield-87ba6810b/"

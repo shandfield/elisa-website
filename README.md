@@ -42,4 +42,4 @@ MIT @ Shelby Handfield
 
 
 ## Social
-   [![Linkedin](https://i.stack.imgur.com/gVE0j.png) LinkedIn]("https://www.linkedin.com/in/shelby-handfield-87ba6810b/","_blank")
+   [![Linkedin](https://i.stack.imgur.com/gVE0j.png) LinkedIn](https://www.linkedin.com/in/shelby-handfield-87ba6810b/)

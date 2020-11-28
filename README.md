@@ -1,4 +1,4 @@
-[![Header](https://raw.githubusercontent.com/elisa-website/<shandfield>/<shandfield>/readme_header.png "Header")](https://some-url.dev/)
+[![Header](https://raw.githubusercontent.com/elisa-website/<OWNER>/<OWNER>/readme_header.png "Header")](https://github.com/shandfield/elisa-website)
 [![GitHub issues](https://img.shields.io/github/issues/Naereen/StrapDown.js.svg)](https://GitHub.com/Naereen/StrapDown.js/issues/)
 [![GitHub issues-closed](https://img.shields.io/github/issues-closed/Naereen/StrapDown.js.svg)](https://GitHub.com/Naereen/StrapDown.js/issues?q=is%3Aissue+is%3Aclosed)
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://lbesson.mit-license.org/)

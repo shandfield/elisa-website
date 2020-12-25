@@ -55,14 +55,22 @@
             </div>
           </div>
         </div>
-      <div class="card-group"> //start card group 1; 3 products per row
+      <div class="card-group"> <!--start card group 1; 3 products per row-->
         <div class="card" style="width: 18rem;">
           <img src="https://user-images.githubusercontent.com/63683598/103140418-93e7fd00-46a3-11eb-84bc-38b397a864b0.jpg" class="card-img-top" alt=fresh></iframe>
             <div class="card-body">
               <h5 class="card-title" style= "font-family:Cabin, sans-serif"> Fresh Smell Blend</h5>
               <h6 class="card-subtitle mb-2 text-muted" style= "font-family:Cabin, sans-serif">$15 per Bottle</h6>
             <p class="card-text" style= "font-family:Cabin, sans-serif"> Does your furry companion just have a funky smell between baths? This unique blend of essential oils created by Young Living will do the trick to keep them smelling good all year round. This is blended by hand through the use of different Young Living essential oils, to create that fresh smell. By fresh, we don't mean pines and that fake chemically smell, we mean that smell that you want to take a deep breath of. This is will make you want to not only spray your furry companion, but maybe even yourself or your teenagers room.</p>
-            <a href="/" target= "#" class="card-link">Need to change this to add to cart</a>
+            <form class="cart" method="post" enctype="multipart/form-data">
+              <div class="quantity">
+                  <input type="number" step="1" min="1" max="" name="quantity" value="1" title="Quantity" class="input-text qty text" size="4" pattern="[0-9]*" inputmode="numeric">
+              </div>
+          
+              <input type="hidden" name="add-to-cart" value="<?php echo get_the_ID(); ?>">
+          
+              <button type="submit" class="single_add_to_cart_button button alt"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+          </form>
             </div>
           </div>
         <div class="card" style="width: 18rem;">
@@ -71,7 +79,15 @@
               <h5 class="card-title" style= "font-family:Cabin, sans-serif"> Dog Ear Blend</h5>
               <h6 class="card-subtitle mb-2 text-muted" style= "font-family:Cabin, sans-serif">$15 per Bottle</h6>
               <p class="card-text" style= "font-family:Cabin, sans-serif"> This is created by hand using Young Living Essential Oils to help your furry loved ones ears. Spray twice per day in ear by pulling straight up and clearing the canal. Clean w/out going to deep in to canal. Do this for 2 days and if you see no change w/ in 2 days, please see a Vet. Keep up by maintaining once per week.</p>
-              <a href="/" target= "#" class="card-link">Need to change this to add to cart</a>
+              <form class="cart" method="post" enctype="multipart/form-data">
+                <div class="quantity">
+                    <input type="number" step="1" min="1" max="" name="quantity" value="1" title="Quantity" class="input-text qty text" size="4" pattern="[0-9]*" inputmode="numeric">
+                </div>
+            
+                <input type="hidden" name="add-to-cart" value="<?php echo get_the_ID(); ?>">
+            
+                <button type="submit" class="single_add_to_cart_button button alt"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+            </form>
             </div>
           </div>
         <div class="card" style="width: 18rem;">
@@ -80,13 +96,21 @@
               <h5 class="card-title" style= "font-family:Cabin, sans-serif"> Dog shampoo Blend</h5>
               <h6 class="card-subtitle mb-2 text-muted" style= "font-family:Cabin, sans-serif">4 ounce bottle for $160</h6>
               <p class="card-text" style= "font-family:Cabin, sans-serif"> For the best of both worlds, Pure Gold provides the advantages of our broad spectrum hemp oil in a product that is great for everyone. This golden colored, CBD rich oil is an excellent daily source of CBD with non-detectable amounts of THC. Each 4 oz bottle of Pure Gold Liquid contains 1500 mg of CBD – over 50 mg of CBD per serving – combined with MCT oil, derived from sustainably sourced coconut oil, and can be added to smoothies or other foods and beverages.</p>
-              <a href="/" target= "#" class="card-link">Need to change this to add to cart</a>
+              <form class="cart" method="post" enctype="multipart/form-data">
+                <div class="quantity">
+                    <input type="number" step="1" min="1" max="" name="quantity" value="1" title="Quantity" class="input-text qty text" size="4" pattern="[0-9]*" inputmode="numeric">
+                </div>
+            
+                <input type="hidden" name="add-to-cart" value="<?php echo get_the_ID(); ?>">
+            
+                <button type="submit" class="single_add_to_cart_button button alt"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+            </form>
               </div>  
             </div>
-         </div>//end card group 1
-          <div class="card-group"> //start card group 2- three products per row
+         </div> <!--end card group 1-->
+          <div class="card-group"> <!--start card group 2- three products per row-->
             <div class="card" style="width: 18rem;">
-              <img src="https://user-images.githubusercontent.com/63683598/103140576-7f0c6900-46a5-11eb-96fe-a16681274303.jpg)" class="card-img-top" alt=hemp></img> 
+              <img src="https://user-images.githubusercontent.com/63683598/103140576-7f0c6900-46a5-11eb-96fe-a16681274303.jpg" class="card-img-top" alt=hemp></img> 
                 <div class="card-body">
                   <h5 class="card-title" style= "font-family:Cabin, sans-serif"> CBD Pure Hemp for Animals 1000mg</h5>
                   <h6 class="card-subtitle mb-2 text-muted" style= "font-family:Cabin, sans-serif">4 ounces for $160</h6>
@@ -94,7 +118,15 @@
                     <br>
                     USAGE:Small breeds 1/8th teaspoon or .5 mL Medium breeds 1/4 teaspoon or 1.25 mL Large breeds 1/2 teaspoon or 2.5 mL
                     INGREDIENTS: Active Ingredients: Per 1/2 Teaspoon (40 servings) Cannabidiol (CBD) 21mg Inactive Ingredients: Medium Chain Triglycerides (MCT) 2g</p>
-                  <a href="/" target= "#" class="card-link">Need to change this to add to cart</a>
+                    <form class="cart" method="post" enctype="multipart/form-data">
+                      <div class="quantity">
+                          <input type="number" step="1" min="1" max="" name="quantity" value="1" title="Quantity" class="input-text qty text" size="4" pattern="[0-9]*" inputmode="numeric">
+                      </div>
+                  
+                      <input type="hidden" name="add-to-cart" value="<?php echo get_the_ID(); ?>">
+                  
+                      <button type="submit" class="single_add_to_cart_button button alt"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+                  </form>
               </div>  
             </div>
             <div class="card" style="width: 18rem;">
@@ -103,7 +135,15 @@
                   <h5 class="card-title" style= "font-family:Cabin, sans-serif"> Hot Spot Treatment</h5>
                   <h6 class="card-subtitle mb-2 text-muted" style= "font-family:Cabin, sans-serif">$15 per Bottle</h6>
                   <p class="card-text" style= "font-family:Cabin, sans-serif"> This also lovingly created by hand through blending certain Young Living Essential oils to help, not treat*, with hot spots. Spray to the area affected twice per day w/ out touching it. Do this for 2-3 days and if no change occurs, please take to Vet for further evaluation.</p>
-                  <a href="/" target= "#" class="card-link">Need to change this to add to cart</a>
+                  <form class="cart" method="post" enctype="multipart/form-data">
+                    <div class="quantity">
+                        <input type="number" step="1" min="1" max="" name="quantity" value="1" title="Quantity" class="input-text qty text" size="4" pattern="[0-9]*" inputmode="numeric">
+                    </div>
+                
+                    <input type="hidden" name="add-to-cart" value="<?php echo get_the_ID(); ?>">
+                
+                    <button type="submit" class="single_add_to_cart_button button alt"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+                </form>
                 </div>
               </div>
           <div class="card" style="width: 18rem;">
@@ -114,10 +154,18 @@
               <p class="card-text" style= "font-family:Cabin, sans-serif"> These treats will have your cat purring with joy! Our artisanally-baked cat treats are naturally flavored with smoked salmon and roasted seafood, for a delicious taste your cat will love. These chewy, CBD-infused treats can be given to your pet daily to help promote overall wellness. Each treat contains 1 mg of CBD to promote cardiovascular function, support healthy joints, and promote neurological health and emotional behavior.
                     <br>
               Usage: 3-4 chews per day for small cats. Active Ingredients: 1 mg of CBD isolate</p>
-              <a href="/" target= "#" class="card-link">Need to change this to add to cart</a>
+              <form class="cart" method="post" enctype="multipart/form-data">
+                <div class="quantity">
+                    <input type="number" step="1" min="1" max="" name="quantity" value="1" title="Quantity" class="input-text qty text" size="4" pattern="[0-9]*" inputmode="numeric">
+                </div>
+            
+                <input type="hidden" name="add-to-cart" value="<?php echo get_the_ID(); ?>">
+            
+                <button type="submit" class="single_add_to_cart_button button alt"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+            </form>
               </div>
             </div>
-         </div> //end card group 2
+         </div> <!--end card group 2-->
  <!-- Essential oils card-->
     <div class="card text-center" style= "font-family:Cabin, sans-serif; color: rgb(82, 9, 82)">
       <div class="card-header">

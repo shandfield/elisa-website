@@ -67,7 +67,7 @@
         <img src="https://user-images.githubusercontent.com/63683598/101266292-b0c78b00-370a-11eb-9919-0231f444b04d.jpg" class="card-img-top" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title" style= "font-family:Cabin, sans-serif"> Pure Gold 1500mg Blend</h5>
-            <h6 class="card-subtitle mb-2 text-muted" style= "font-family:Cabin, sans-serif">4 ounce bottle for $160</h6>
+            <h6 class="card-subtitle mb-2" style= "font-family:Cabin, sans-serif">4 ounce bottle for $160 and 1 ounce for $45</h6>
             <p class="card-text" style= "font-family:Cabin, sans-serif"> For the best of both worlds, Pure Gold provides the advantages of our broad spectrum hemp oil in a product that is great for everyone. This golden colored, CBD rich oil is an excellent daily source of CBD with non-detectable amounts of THC. Each 4 oz bottle of Pure Gold Liquid contains 1500 mg of CBD – over 50 mg of CBD per serving – combined with MCT oil, derived from sustainably sourced coconut oil, and can be added to smoothies or other foods and beverages.</p>
             <form class="cart" method="post" enctype="multipart/form-data">
               <div class="quantity">
@@ -84,7 +84,7 @@
         <img src="https://user-images.githubusercontent.com/63683598/101265477-1d8b5700-3704-11eb-9ac4-1d5d49925a1e.jpg" class="card-img-top" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title" style= "font-family:Cabin, sans-serif">Kannaway 500mg CBD Salve</h5>
-            <h6 class="card-subtitle mb-2 text-muted" style= "font-family:Cabin, sans-serif">1.3 ounces for $45.00 and Travel Size $5</h6>
+            <h6 class="card-subtitle mb-2" style= "font-family:Cabin, sans-serif">1.3 ounces for $45.00 and Travel Size $5</h6>
             <p class="card-text" style= "font-family:Cabin, sans-serif"> Whether you live an active lifestyle or just want something that will be super moisturizing that can give you the appearance of healthy and youthful looking skin at the same time, Kannaway Salve is exactly what you need! It contains a unique bi-bong™ herbal formulation that works synergistically with Sustainable Hemp Oil for ultimate results. This revolutionary combination of Sustainable Hemp Oil and our proprietary East Asian botanicals brings rich, nourishing moisture to all skin types. Other benefits include a safe and natural comfort after strenuous activities and it is a lightly scented herbal formula perfect for all skin types. This rich and yet nongreasy salve will not stain your clothes or clog your pores, it will however absorb quickly and leave your skin feeling great and help with your pain.</p>
             <form class="cart" method="post" enctype="multipart/form-data">
               <div class="quantity">
@@ -101,7 +101,7 @@
           <img src="https://user-images.githubusercontent.com/63683598/101265561-ae623280-3704-11eb-805c-92df13a29d32.jpg" class="card-img-top" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title" style= "font-family:Cabin, sans-serif">Thieves Cough Drops</h5>
-              <h6 class="card-subtitle mb-2 text-muted" style= "font-family:Cabin, sans-serif">$30 per bag</h6>
+              <h6 class="card-subtitle mb-2" style= "font-family:Cabin, sans-serif">$30 per bag</h6>
               <p class="card-text" style= "font-family:Cabin, sans-serif"> No matter what time of year it is, soothing a sore throat fast is always in season. Look no further then Thieves Cough Drops to sooth your sore throat, relieve coughs, and cool your nasal passages. With flavors of mint, spices, and sweetness this drop is sure to give you comfort. It is a triple-action formula made of naturally derived ingredients, and includes Young Living's pure, therapeutic-grade essential oils and menthol from Peppermint. These are also naturally sugar free and can be taken every 2 hours if needed. There are 30 drops per bad, and you only 1 drop to feel the soothing power!</p>
               <form class="cart" method="post" enctype="multipart/form-data">
                 <div class="quantity">
@@ -129,16 +129,24 @@
         <img src="https://user-images.githubusercontent.com/63683598/101265525-6ba05a80-3704-11eb-9578-176596130f8d.jpg" class="card-img-top" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title" style= "font-family:Cabin, sans-serif"> Thieves Household Cleaner </h5>
-            <h6 class="card-subtitle mb-2 text-muted" style= "font-family:Cabin, sans-serif">$12 for 14.4 fl ounce bottle </h6>
+            <h6 class="card-subtitle mb-2" style= "font-family:Cabin, sans-serif">14.4 fl ounce bottle for $12 </h6>
             <p class="card-text" style= "font-family:Cabin, sans-serif"> This is the perfect cleaner that is plant based and boosted with Young Living’s Thieves essential oil blend! This cleaner has a concentrated, multipurpose solution that gives you a deep clean in any room of the house. The best part, no more harsh chemicals! Instead you will be greeted by its spicy-sweet aroma. It is safe to use around everyone in your family, including pets. Thieves will help you not only clean your home, but create a welcoming space that’s perfect for everyone with the fresh, inviting scent and sparkling clean of Thieves Household Cleaner.</p>
-            <a href="/" target= "#" class="card-link">Need to change this to add to cart</a>
+            <form class="cart" method="post" enctype="multipart/form-data">
+              <div class="quantity">
+                  <input type="number" step="1" min="1" max="" name="quantity" value="1" title="Quantity" class="input-text qty text" size="4" pattern="[0-9]*" inputmode="numeric">
+              </div>
+          
+              <input type="hidden" name="add-to-cart" value="<?php echo get_the_ID(); ?>">
+          
+              <button type="submit" class="single_add_to_cart_button button alt"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+          </form>
           </div>
         </div>
         <div class="card" style="width:400px">
           <img src="https://user-images.githubusercontent.com/63683598/101265542-925e9100-3704-11eb-880b-bcad038adb35.jpg" class="card-img-top" alt="Card image cap">
             <div class="card-body">
                <h5 class="card-title style= "font-family:Cabin, sans-serif"">Thieves Travel Size Cleaner </h5>
-               <h6 class="card-subtitle mb-2 text-muted" style= "font-family:Cabin, sans-serif">$11 per 1 ounce bottle</h6>
+               <h6 class="card-subtitle mb-2" style= "font-family:Cabin, sans-serif">1 ounce bottle for $11</h6>
                <p class="card-text" style= "font-family:Cabin, sans-serif"> Quick and convenient, Thieves Spray is a portable essential oil spray ideal for cleaning small surfaces. Just one small spray freshens counters, sinks, door handles, toilets, and more using only naturally derived, plant-based ingredients and the powerful spicy-citrus scent of Thieves essential oil blend. Safe to use around children and the perfect size to throw in a purse, backpack, or luggage, a bottle of Thieves Spray is ideal to keep with you wherever you go! We love using Thieves Spray on light switches, kitchen sinks, door knobs, public toilet seats, bathroom counters, smelly shoes, and more.
                 🌟FAVORITE PRODUCT: I use this spray in my mouth to prevent getting a cold, the flue or any other sickness. You first feel a numbness in the throat because of the Clove and then it goes away in about a 40sec or so. I also use this when I travel and will use this spray in a hotel room, when I use a public restroom and anywhere there are a lot of people.</p>
                 <form class="cart" method="post" enctype="multipart/form-data">
@@ -157,7 +165,7 @@
             <img src=" https://user-images.githubusercontent.com/63683598/101297106-67e40500-37e4-11eb-8676-02592adeebe2.jpg" class="card-img-top" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title" style= "font-family:Cabin, sans-serif">Thieves Hand Sanitizer</h5>
-                <h6 class="card-subtitle mb-2 text-muted" style= "font-family:Cabin, sans-serif">$10 per 2 ounce bottle</h6>
+                <h6 class="card-subtitle mb-2" style= "font-family:Cabin, sans-serif"> 2 ounce bottle for $10 </h6>
                 <p class="card-text" style= "font-family:Cabin, sans-serif"> Thieves Waterless Hand Purifier is a quick, convenient, purse-friendly fix for clean hands anywhere—from the classroom, to the airport, to the grocery store, and anywhere in between. Infused with Thieves and Peppermint essential oils, along with aloe, Thieves Waterless Hand Purifier cleanses, purifies, and soothes skin, leaving a pleasant, spicy-sweet scent.</p>
                 <form class="cart" method="post" enctype="multipart/form-data">
                   <div class="quantity">

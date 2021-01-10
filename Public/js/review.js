@@ -1,23 +1,23 @@
 $(document).ready(function() {
-    // blogContainer holds all of our posts
+    // reviewContainer holds all of the reviews
     var reviewContainer = $(".review-container");
     var postRatingSelect = $("#rating");
     // Click events for the edit and delete buttons
-    $(document).on("click", "button.delete", handlePostDelete);
-    $(document).on("click", "button.edit", handlePostEdit);
+    $(document).on("click", "button.delete", handleReviewDelete);
+    $(document).on("click", "button.edit", handleReviewEdit);
     postRatingSelect.on("change", handleRatingChange);
-    var post;
+    var reviews;
   
-    // This function grabs posts from the database and updates the view
-    function getPosts(rating) {
+    // This function grabs reviews from the database and updates the view to show them
+    function getReviews(rating) {
       var ratingString = rating || "";
       if (ratingString) {
         ratingString = "/rating/" + ratingString;
       }
       $.get("/api/review" + ratingString, function(data) {
         console.log("Review", data);
-        posts = data;
-        if (!posts || !posts.length) {
+        reviews = data;
+        if (!reviews || !reviews.length) {
           displayEmpty();
         }
         else {
@@ -26,105 +26,102 @@ $(document).ready(function() {
       });
     }
   
-    // This function does an API call to delete posts
-    function deletePost(id) {
+    // This function does an API call to delete the review
+    function deleteReview(id) {
       $.ajax({
         method: "DELETE",
         url: "/api/review/" + id
       })
         .then(function() {
-          getPosts(postRatingSelect.val());
+          getReviews(postRatingSelect.val());
         });
     }
   
     // Getting the initial list of reviews
-    getPosts();
-    // InitializeRows handles appending all of our constructed post HTML inside
-    // blogContainer
+    getReviews();
+    // InitializeRows handles appending all of our constructed post HTML inside the reviewContainer
     function initializeRows() {
-      blogContainer.empty();
-      var postsToAdd = [];
-      for (var i = 0; i < posts.length; i++) {
-        postsToAdd.push(createNewRow(posts[i]));
+      reviewContainer.empty();
+      var reviewsToAdd = [];
+      for (var i = 0; i < reviews.length; i++) {
+        reviewsToAdd.push(createNewRow(reviews[i]));
       }
-      blogContainer.append(postsToAdd);
+      reviewContainer.append(reviewsToAdd);
     }
   
-    // This function constructs a post's HTML
-    function createNewRow(post) {
-      var newPostCard = $("<div>");
-      newPostCard.addClass("card");
-      var newPostCardHeading = $("<div>");
-      newPostCardHeading.addClass("card-header");
+    // This function constructs a reviews HTML
+    function createNewRow(review) {
+      var newReviewCard = $("<div>");
+      newReviewCard.addClass("card");
+      var newReviewCardHeading = $("<div>");
+      newReviewCardHeading.addClass("card-header");
       var deleteBtn = $("<button>");
       deleteBtn.text("x");
       deleteBtn.addClass("delete btn btn-danger");
       var editBtn = $("<button>");
       editBtn.text("EDIT");
       editBtn.addClass("edit btn btn-default");
-      var newPostTitle = $("<h2>");
-      var newPostDate = $("<small>");
-      var newPostCategory = $("<h5>");
-      newPostCategory.text(post.category);
-      newPostCategory.css({
+      var newReviewTitle = $("<h2>");
+      var newReviewDate = $("<small>");
+      var newReviewRating = $("<h5>");
+      newReviewRating.text(review.rating);
+      newReviewRating.css({
         float: "right",
         "font-weight": "700",
         "margin-top":
         "-15px"
       });
-      var newPostCardBody = $("<div>");
-      newPostCardBody.addClass("card-body");
-      var newPostBody = $("<p>");
-      newPostTitle.text(post.title + " ");
-      newPostBody.text(post.body);
+      var newReviewCardBody = $("<div>");
+      newReviewCardBody.addClass("card-body");
+      var newReviewBody = $("<p>");
+      newReviewTitle.text(post.title + " ");
+      newReviewBody.text(post.body);
       var formattedDate = new Date(post.createdAt);
       formattedDate = moment(formattedDate).format("MMMM Do YYYY, h:mm:ss a");
-      newPostDate.text(formattedDate);
-      newPostTitle.append(newPostDate);
-      newPostCardHeading.append(deleteBtn);
-      newPostCardHeading.append(editBtn);
-      newPostCardHeading.append(newPostTitle);
-      newPostCardHeading.append(newPostCategory);
-      newPostCardBody.append(newPostBody);
-      newPostCard.append(newPostCardHeading);
-      newPostCard.append(newPostCardBody);
-      newPostCard.data("post", post);
-      return newPostCard;
+      newReviewDate.text(formattedDate);
+      newReviewTitle.append(newReviewDate);
+      newReviewCardHeading.append(deleteBtn);
+      newReviewCardHeading.append(editBtn);
+      newReviewCardHeading.append(newReviewTitle);
+      newReviewCardHeading.append(newReviewRating);
+      newReviewCardBody.append(newReviewBody);
+      newReviewCard.append(newReviewCardHeading);
+      newReviewCard.append(newReviewCardBody);
+      newReviewCard.data("review", review);
+      return newReviewCard;
     }
   
-    // This function figures out which post we want to delete and then calls
-    // deletePost
-    function handlePostDelete() {
-      var currentPost = $(this)
+    // This function figures out which review the user wants to delete
+      function handleReviewDelete() {
+      var currentReview = $(this)
         .parent()
         .parent()
-        .data("post");
-      deletePost(currentPost.id);
+        .data("review");
+      deletePost(currentReview.id);
     }
   
-    // This function figures out which post we want to edit and takes it to the
-    // Appropriate url
-    function handlePostEdit() {
-      var currentPost = $(this)
+    // This function figures out which review to edit and takes the user to the correct HTML
+     function handleReviewEdit() {
+      var currentReview = $(this)
         .parent()
         .parent()
-        .data("post");
+        .data("review");
       window.location.href = "/cms?post_id=" + currentPost.id;
     }
   
-    // This function displays a message when there are no posts
+    // This function displays a message when there are no reviews for a certain rating
     function displayEmpty() {
-      blogContainer.empty();
+      reviewContainer.empty();
       var messageH2 = $("<h2>");
       messageH2.css({ "text-align": "center", "margin-top": "50px" });
-      messageH2.html("No posts yet for this category, navigate <a href='/cms'>here</a> in order to create a new post.");
-      blogContainer.append(messageH2);
+      messageH2.html("No posts yet for this rating.");
+      reviewContainer.append(messageH2);
     }
   
-    // This function handles reloading new posts when the category changes
-    function handleCategoryChange() {
-      var newPostCategory = $(this).val();
-      getPosts(newPostCategory);
+    // This function handles reloading new posts when the rating changes
+    function handleRatingChange() {
+      var newReviewRating = $(this).val();
+      getReviews(newReviewRating);
     }
   
   });
